@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bk"
+    android:orientation="horizontal">
+    
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="1">
+	
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="2sp"
+	        android:background="#02b8bb" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+	            
+
+	            <RelativeLayout
+	                android:id="@+id/status_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="20dip"
+	                android:layout_alignParentBottom="true"
+	                android:background="#01a7bc" >
+	                <include android:id="@+id/status_bar1" layout="@layout/multi_monitor_statusbar" />
+	            </RelativeLayout>
+
+		        <ImageButton
+		            android:id="@+id/btn_monitor_place_1"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_above="@id/status_layout"
+		            android:background="@drawable/btn_addcam_switch" />
+		
+		    	<com.tutk.IOTC.Monitor
+		    	    android:id="@+id/mv_monitor_0"
+		    	    android:layout_width="match_parent"
+		    	    android:layout_height="match_parent"
+		    	    android:layout_above="@id/status_layout" />
+		    	
+		    	<ImageButton
+		    	    android:id="@+id/Settingbutton1"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignParentRight="true"
+		    	    android:layout_alignParentTop="true"
+		    	    android:background="@drawable/btn_morefunction_switch"
+		    	    android:visibility="gone" />
+	    
+	    	</RelativeLayout>
+	        	    		        
+		    <Button
+		        android:layout_width="1sp"
+		        android:layout_height="match_parent"
+		        android:background="#02b8bb" />
+	        
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+		    	<RelativeLayout
+	                android:id="@+id/status_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="20dip"
+	                android:layout_alignParentBottom="true"
+	                android:background="#01a7bc" >
+	                <include android:id="@+id/status_bar2" layout="@layout/multi_monitor_statusbar" />
+	            </RelativeLayout>
+
+		        <ImageButton
+		            android:id="@+id/btn_monitor_place_2"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_above="@id/status_layout"
+		            android:background="@drawable/btn_addcam_switch"
+		            android:scaleType="centerCrop" />
+		
+	        	<com.tutk.IOTC.Monitor 
+		    	    android:id="@+id/mv_monitor_1"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:layout_above="@id/status_layout"
+					 />
+	        	<ImageButton
+	                android:id="@+id/Settingbutton2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:background="@drawable/btn_morefunction_switch"
+	                android:visibility="gone"
+	                />
+	    	</RelativeLayout>
+	        	    		
+	    </LinearLayout>
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="2sp"
+	        android:background="#02b8bb" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+	
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+	        	<RelativeLayout
+	                android:id="@+id/status_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="20dip"
+	                android:layout_alignParentBottom="true"
+	                android:background="#01a7bc" >
+	                <include android:id="@+id/status_bar3" layout="@layout/multi_monitor_statusbar" />
+	            </RelativeLayout>
+
+		        <ImageButton
+		            android:id="@+id/btn_monitor_place_3"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_above="@id/status_layout"
+		            android:background="@drawable/btn_addcam_switch"
+		            android:scaleType="centerCrop" />
+		
+	        	<com.tutk.IOTC.Monitor 
+		    	    android:id="@+id/mv_monitor_2"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:layout_above="@id/status_layout"
+					 />
+	        	<ImageButton
+	                android:id="@+id/Settingbutton3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:background="@drawable/btn_morefunction_switch"
+	                android:visibility="gone"
+	                />
+	    	</RelativeLayout>
+	        	    		        
+		    <Button
+		        android:layout_width="1sp"
+		        android:layout_height="match_parent"
+		        android:background="#02b8bb" />
+	        
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+	        	<RelativeLayout
+	                android:id="@+id/status_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="20dip"
+	                android:layout_alignParentBottom="true"
+	                android:background="#01a7bc" >
+	                <include android:id="@+id/status_bar4" layout="@layout/multi_monitor_statusbar" />
+	            </RelativeLayout>
+
+		        <ImageButton
+		            android:id="@+id/btn_monitor_place_4"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_above="@id/status_layout"
+		            android:background="@drawable/btn_addcam_switch"
+		            android:scaleType="centerCrop" />
+		
+	        	<com.tutk.IOTC.Monitor
+		    	    android:id="@+id/mv_monitor_3"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:layout_above="@id/status_layout"
+					 />
+	        	<ImageButton
+	                android:id="@+id/Settingbutton4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:background="@drawable/btn_morefunction_switch"
+	                android:visibility="gone"
+	                />
+	    	</RelativeLayout>
+	        	    		    		        
+	    </LinearLayout>
+	    
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="2sp"
+	        android:background="#02b8bb" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+	
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+	        	<RelativeLayout
+	                android:id="@+id/status_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="20dip"
+	                android:layout_alignParentBottom="true"
+	                android:background="#01a7bc" >
+	                <include android:id="@+id/status_bar5" layout="@layout/multi_monitor_statusbar" />
+	            </RelativeLayout>
+
+		        <ImageButton
+		            android:id="@+id/btn_monitor_place_5"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_above="@id/status_layout"
+		            android:background="@drawable/btn_addcam_switch"
+		            android:scaleType="centerCrop" />
+		
+	        	<com.tutk.IOTC.Monitor 
+		    	    android:id="@+id/mv_monitor_4"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:layout_above="@id/status_layout"
+					 />
+	        	<ImageButton
+	                android:id="@+id/Settingbutton5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:background="@drawable/btn_morefunction_switch"
+	                android:visibility="gone"
+	                />
+	    	</RelativeLayout>
+	        	    		        
+		    <Button
+		        android:layout_width="1sp"
+		        android:layout_height="match_parent"
+		        android:background="#02b8bb" />
+	        
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+	        	<RelativeLayout
+	                android:id="@+id/status_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="20dip"
+	                android:layout_alignParentBottom="true"
+	                android:background="#01a7bc" >
+	                <include android:id="@+id/status_bar6" layout="@layout/multi_monitor_statusbar" />
+	            </RelativeLayout>
+
+		        <ImageButton
+		            android:id="@+id/btn_monitor_place_6"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_above="@id/status_layout"
+		            android:background="@drawable/btn_addcam_switch"
+		            android:scaleType="centerCrop" />
+		
+	        	<com.tutk.IOTC.Monitor
+		    	    android:id="@+id/mv_monitor_5"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent" 
+					android:layout_above="@id/status_layout"
+					/>
+	        	<ImageButton
+	                android:id="@+id/Settingbutton6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:background="@drawable/btn_morefunction_switch"
+	                android:visibility="gone"
+	                />
+	    	</RelativeLayout>
+	        	    		    		        
+	    </LinearLayout>
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="2sp"
+	        android:background="#02b8bb" />
+	</LinearLayout>
+	
+	
+	
+	
+</LinearLayout>

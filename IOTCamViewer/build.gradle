@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+    compile project(':AVIOCTRLDEF:AVIOCtrlDefine')
+    compile('com.crashlytics.sdk.android:crashlytics:2.4.0@aar') {
+        transitive = true;
+    }
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.actionbarsherlock:actionbarsherlock:0.0.1'
+    compile 'com.viewpagerindicator:viewpagerindicator:0.0.1'
+    compile 'com.slidingmenu:slidingmenu:0.0.1'
+    compile 'com.google.android.gms:play-services-gcm:8.1.0'
+//    compile 'com.androidwheel:androidwheel:0.0.1'
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+    productFlavors {
+
+        Kalay_Car {
+            applicationId = "tw.haotek.ap.CamBoss"
+            versionCode 2015100218
+            versionName = "1.0.2"
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+        Kalay_Car {
+            java.srcDirs = ['src/Kalay_Car']
+            jniLibs.srcDirs = ['libs/Kalay_Car']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // apk file's name
+//                        def fileName = "${variant.productFlavors[0].name}_${variant.productFlavors[0].versionName}.apk"
+                        def fileName = "CamBoss_${variant.productFlavors[0].versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}

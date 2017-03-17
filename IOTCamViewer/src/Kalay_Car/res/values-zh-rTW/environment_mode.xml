@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="environment_mode">
+	    <item>室內模式(50hz)</item>
+	    <item>室內模式(60hz)</item>
+		<item>室外模式</item>
+		<item>夜間模式</item>
+	</string-array>
+</resources>

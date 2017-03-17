@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+        android:layout_centerInParent="true"/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_noimage"/>
+
+        <TextView
+            android:id="@+id/txtNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgNull"
+            android:text="No Photos"
+            android:textSize="30sp"
+            android:textColor="#B4B4B4"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/item_black"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_download"/>
+
+        <ImageButton
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_trash"/>
+    </RelativeLayout>
+</RelativeLayout>

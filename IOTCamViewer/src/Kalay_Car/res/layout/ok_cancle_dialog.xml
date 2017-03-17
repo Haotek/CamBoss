@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/btn_channel_up" >
+        
+        <TextView 
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEXT"
+            android:textColor="#FFFFFF" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/dialog_cancel_button"
+            android:text="@string/cancel"
+			android:textColor="@drawable/txt_color_dialog" />
+        
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/dialog_ok_button"
+            android:text="@string/ok"
+			android:textColor="@drawable/txt_color_dialog" />
+        
+    </LinearLayout>
+
+</LinearLayout>

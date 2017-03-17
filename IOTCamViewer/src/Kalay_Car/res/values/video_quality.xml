@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="video_quality">
+	    <item>Max</item>
+		<item>High</item>
+		<item>Medium</item>
+		<item>Low</item>
+		<item>Min</item>
+	</string-array>
+</resources>

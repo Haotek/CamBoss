@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/video_image"
+        android:layout_width="84dp"
+        android:layout_height="84dp">
+    </ImageView>
+
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true" /> <!-- for calibration -->
+
+    <ImageView
+        android:id="@+id/imgDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/video_image"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/ic_download"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/video_image_check"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:visibility="gone" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/line" />
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <!--
+     	<ImageView
+	    android:id="@+id/video_image_check"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/video_image"
+	    android:layout_alignRight="@+id/video_image"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:src="@drawable/delet_choose" />
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_speaker"
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_speaker_off_switch"
+            android:text=""/>
+
+        <ImageButton
+            android:id="@+id/button_snapshot"
+            android:layout_marginLeft="14.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_snapshot_switch"
+            android:text=""/>
+
+        <com.tutk.P2PCam264.ui.mySwitchButton
+            android:id="@+id/swRecording"
+            android:layout_width="90dp"
+            android:layout_height="47dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

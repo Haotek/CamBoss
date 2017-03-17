@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        
+	    <ListView
+	        android:id="@+id/lstCameraList"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="@color/transparent_color"
+	        android:dividerHeight="2dp" />
+
+	    <TextView
+	        android:id="@+id/txt_null_device"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:text="@string/txt_Please_add_a_device"
+	        android:textColor="@color/white"
+	        android:textSize="20sp"
+	        android:visibility="gone" />
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

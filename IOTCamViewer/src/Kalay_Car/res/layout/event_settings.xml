@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_silver_light_corner"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtMotionDetectionSetting"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="15dp"
+                android:background="#F7B52C" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginBottom="15dp"
+                android:background="#F7B52C" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Switch
+                    android:id="@+id/swMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txtMonition"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/txtSens"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/spSens"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_settings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutGarbage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#C8C9CA" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#C8C9CA" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/txtPreset"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPreset"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner_settings" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#C8C9CA" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#C8C9CA" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Switch
+                            android:id="@+id/swMail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/txtMail"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#C8C9CA" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#C8C9CA" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/txtFTPInterval"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/status_bar" />
+
+                        <Spinner
+                            android:id="@+id/spInterval"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner_settings" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

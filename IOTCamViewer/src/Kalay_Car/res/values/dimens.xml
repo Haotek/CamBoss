@@ -1,0 +1,58 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <dimen name="slidingmenu_offset">160dp</dimen>
+    <dimen name="slidingmenu_offset_left">50dp</dimen>
+    <dimen name="shadow_width"> 15dp</dimen >
+
+    <dimen name="bubble_ch_offset_w_land"> -20dp</dimen>
+    <dimen name="bubble_ch_offset_h_land"> 15dp</dimen>
+    <dimen name="bubble_ch_w"> 65dp</dimen>
+    <dimen name="bubble_ch_h"> 160dp</dimen>
+    <dimen name="bubble_ch_offset_w"> -10dp</dimen>
+    <dimen name="bubble_qvga_w"> 200dp</dimen>
+    <dimen name="bubble_qvga_h"> 185dp</dimen>    
+    <dimen name="bubble_env_w"> 200dp</dimen>
+    <dimen name="bubble_env_h"> 236dp</dimen>
+    <dimen name="bubble_offset_w"> -50dp</dimen>
+    <dimen name="bubble_offset_h"> 40dp</dimen>
+    <dimen name="bubble_dev_w"> 250dp</dimen>
+    <dimen name="bubble_dev_row_1"> 110dp</dimen>
+    <dimen name="bubble_dev_row_2"> 150dp</dimen>
+    <dimen name="bubble_dev_row_3"> 180dp</dimen>
+    <dimen name="bubble_dev_scroll_row_1"> 60dp</dimen>
+    <dimen name="bubble_dev_scroll_row_2"> 100dp</dimen>
+    <dimen name="bubble_dev_scroll_row_3"> 130dp</dimen>
+    
+    <dimen name="bubble_add_offset_w"> 20dp</dimen>
+    <dimen name="bubble_add_offset_h"> 60dp</dimen>
+
+    <dimen name="track_width"> 90dp</dimen>
+    <dimen name="track_height"> 47dp</dimen>
+    <dimen name="thumb_width"> 61dp</dimen>
+    <dimen name="thumb_height"> 40dp</dimen>
+    <dimen name="switch_offset"> 3.5dp</dimen>
+    <dimen name="bubble_liveview_offset"> 5dp</dimen>
+    <dimen name="sw_track_width"> 55dp</dimen>
+    <dimen name="sw_track_height"> 21dp</dimen>
+    <dimen name="sw_thumb_width"> 16dp</dimen>
+    <dimen name="sw_thumb_height"> 16dp</dimen>
+    <dimen name="switch_offset_g"> 2.5dp</dimen>
+    <dimen name="refresh_h"> 60dp</dimen>
+    
+</resources>

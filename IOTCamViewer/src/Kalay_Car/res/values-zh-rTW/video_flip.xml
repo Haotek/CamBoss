@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="video_flip">
+	    <item>正常</item>
+	    <item>垂直翻轉</item>
+		<item>水平翻轉(鏡像)</item>
+		<item>垂直及水平翻轉</item>
+	</string-array>
+</resources>

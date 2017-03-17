@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/item_black"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_search" />
+
+        <ImageButton
+            android:id="@+id/btnDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_download"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/btnCH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_event_ch"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvCH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CH1"
+                android:textColor="#000000"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_trash"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layoutBar"
+        android:orientation="vertical" >
+
+        <com.tutk.P2PCam264.RefreshableView
+            android:id="@+id/refreshable_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dbdbdb"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtSearchEventDuration"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/txtSearchTimeDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lstEventList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/line"
+                android:dividerHeight="0.5dp"
+                android:listSelector="@drawable/list_item_click" />
+        </com.tutk.P2PCam264.RefreshableView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMasking"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#99000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#00000000" />
+
+        <LinearLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/panel"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnSearchCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="@string/cancel"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnSearchOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:text="@string/txt_done"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <kankan.wheel.widget.WheelView
+                    android:id="@+id/wheelSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCH"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/panel"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnCHCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="@string/cancel"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnCHOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:text="@string/txt_done"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <kankan.wheel.widget.WheelView
+                    android:id="@+id/wheelCH"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

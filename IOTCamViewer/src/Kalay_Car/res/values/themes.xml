@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+    </style>
+    <style name="ThemeDialogCustom">
+    	<item name="android:windowFrame">@null</item>
+    	<item name="android:windowIsFloating">true</item>
+    	<item name="android:windowIsTranslucent">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:windowAnimationStyle">@null</item>    	
+    	<item name="android:windowBackground">@color/transparent_color</item>
+    	<item name="android:backgroundDimEnabled">false</item>
+    	<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    	<item name="android:colorBackgroundCacheHint">@null</item>
+   </style>
+   
+    <style name="ProgressStyle" parent="@style/Theme.Sherlock.Light">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:indeterminate">true</item> 
+</style>
+
+    <style name="MyTheme" parent="@style/Theme.Sherlock.Light.NoActionBar" />
+
+	<style name="MyTheme.LaunchTheme" parent="MyTheme">
+    	<item name="android:windowNoTitle">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+
+</resources>

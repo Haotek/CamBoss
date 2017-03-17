@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="event_notification">
+	    <item>安靜模式</item>
+		<item>鈴聲</item>
+		<item>震動</item>
+		<item>鈴聲及震動</item>
+	</string-array>
+</resources>

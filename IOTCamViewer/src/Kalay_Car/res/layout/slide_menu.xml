@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_black"
+    android:orientation="vertical" >
+
+    <!--
+     <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        android:id="@+id/slidingmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_logo" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_black" />
+
+    <Button
+        android:id="@+id/btnEvent"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_switch_menu"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/ctxViewEvent"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_black"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_switch_menu"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/ctxViewSnapshot"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_black"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_black"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnPush"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_switch_menu"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/txt_Noti_settings"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_black"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_switch_menu"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/optAbout"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_black" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_switch_menu"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/optExit"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_black" />
+
+    <Button
+        android:id="@+id/btnRecording"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_switch_menu"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/optDropbox"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible" />
+    <!-- </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu> -->
+
+</LinearLayout>

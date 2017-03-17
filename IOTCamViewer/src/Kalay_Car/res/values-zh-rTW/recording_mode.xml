@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="recording_mode">
+	    <item>關閉</item>
+		<item>全時錄影</item>
+		<item>警報錄影</item>
+	</string-array>
+</resources>

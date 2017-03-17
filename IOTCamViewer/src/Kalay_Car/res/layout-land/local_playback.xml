@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_white" >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/button_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/item_black"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_play" />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/sbVideo"
+            android:text="--:--" />
+
+        <TextView
+            android:id="@+id/txt_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_playpause"
+            android:text="--:--" />
+
+        <SeekBar
+            android:id="@+id/sbVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_total"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_current"
+            android:maxHeight="4dip"
+            android:maxWidth="400dp"
+            android:minHeight="4dip"
+            android:minWidth="400dp"
+            android:progressDrawable="@drawable/playback_seekbar_bg"
+            android:thumb="@drawable/bg_seekbar_thumb"
+            android:thumbOffset="10dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/line"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/dialog_Playback"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_playback_start"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:id="@+id/setting_layout"  
+	android:orientation="vertical">
+
+    	<LinearLayout
+    	    android:id="@+id/dialog_linearlayout"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	    android:background="@drawable/bg_popwindow"
+    	    android:gravity="center"
+    	    android:orientation="horizontal" >
+
+    	    <LinearLayout
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginRight="5.0dp"
+    	        android:layout_marginTop="5.0dp"
+    	        android:gravity="center"
+    	        android:orientation="horizontal" >
+
+    	        <ImageButton
+    	            android:id="@+id/btn_more_photo"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginLeft="8.0dp"
+    	            android:layout_marginRight="8.0dp"
+    	            android:background="@drawable/btn_more_photo_switch" />
+
+                <ImageButton
+                    android:id="@+id/btn_more_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dp"
+                    android:layout_marginRight="8.0dp"
+                    android:background="@drawable/btn_more_event_switch" />
+
+    	        <ImageButton
+    	            android:id="@+id/btn_more_set"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginLeft="8.0dp"
+    	            android:layout_marginRight="8.0dp"
+    	            android:background="@drawable/btn_more_set_switch" />
+
+                <ImageButton
+                    android:id="@+id/btn_more_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dp"
+                    android:layout_marginRight="8.0dp"
+                    android:background="@drawable/btn_delete" />
+
+    	    </LinearLayout>
+    	</LinearLayout>
+    	
+    	<ImageButton
+        	android:id="@+id/cancel_button"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignRight="@+id/dialog_linearlayout"
+        	android:layout_alignTop="@+id/dialog_linearlayout"
+        	android:background="@drawable/btn_more_cancel_switch" />
+
+</RelativeLayout>

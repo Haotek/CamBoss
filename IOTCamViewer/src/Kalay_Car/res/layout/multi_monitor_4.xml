@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#00000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000" >
+
+                    <include
+                        android:id="@+id/status_bar1"
+                        layout="@layout/multi_monitor_statusbar" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_monitor_place_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_add_device_ok_switch" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_progress_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"/>
+
+                </RelativeLayout>
+
+                <com.tutk.IOTC.Monitor
+                    android:id="@+id/mv_monitor_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout" />
+
+                <ImageButton
+                    android:id="@+id/Settingbutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/btn_morefunction_switch"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutDelete_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#99000000"
+                    android:clickable="true"
+                    android:visibility="gone" >
+
+                    <ImageButton
+                        android:id="@+id/btn_delete_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_delete" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_new_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:background="#00000000" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000" >
+
+                    <include
+                        android:id="@+id/status_bar2"
+                        layout="@layout/multi_monitor_statusbar" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_monitor_place_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_add_device_ok_switch" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_progress_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"/>
+
+                </RelativeLayout>
+
+                <com.tutk.IOTC.Monitor
+                    android:id="@+id/mv_monitor_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:clickable="true" />
+
+                <ImageButton
+                    android:id="@+id/Settingbutton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/btn_morefunction_switch"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutDelete_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#99000000"
+                    android:visibility="gone" >
+
+                    <ImageButton
+                        android:id="@+id/btn_delete_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_delete" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_new_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#00000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000" >
+
+                    <include
+                        android:id="@+id/status_bar3"
+                        layout="@layout/multi_monitor_statusbar" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_monitor_place_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_add_device_ok_switch" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_progress_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"/>
+
+                </RelativeLayout>
+
+                <com.tutk.IOTC.Monitor
+                    android:id="@+id/mv_monitor_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout" />
+
+                <ImageButton
+                    android:id="@+id/Settingbutton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/btn_morefunction_switch"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutDelete_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#99000000"
+                    android:clickable="true"
+                    android:visibility="gone" >
+
+                    <ImageButton
+                        android:id="@+id/btn_delete_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_delete" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_new_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:background="#00000000" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/status_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000" >
+
+                    <include
+                        android:id="@+id/status_bar4"
+                        layout="@layout/multi_monitor_statusbar" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_monitor_place_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_add_device_ok_switch" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_progress_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#FF4B4743"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"/>
+
+                </RelativeLayout>
+
+                <com.tutk.IOTC.Monitor
+                    android:id="@+id/mv_monitor_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout" />
+
+                <ImageButton
+                    android:id="@+id/Settingbutton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/btn_morefunction_switch"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutDelete_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/status_layout"
+                    android:background="#99000000"
+                    android:clickable="true"
+                    android:visibility="gone" >
+
+                    <ImageButton
+                        android:id="@+id/btn_delete_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_delete" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_new_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

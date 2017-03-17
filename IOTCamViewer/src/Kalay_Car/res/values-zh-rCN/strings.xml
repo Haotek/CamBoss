@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_Please_add_a_device">尚无设备列表\n 请先新增装置</string>
+    <string name="txtNormal">普通</string>
+	
+</resources>

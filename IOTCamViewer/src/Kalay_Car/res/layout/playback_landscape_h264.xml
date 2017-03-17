@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    	<com.tutk.IOTC.MediaCodecMonitor android:id="@+id/monitor"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent" />
+    	
+    <!-- 
+	<com.tutk.P2PCam264.TouchedMonitor android:id="@+id/monitor"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent" />
+	-->
+	
+</LinearLayout>   

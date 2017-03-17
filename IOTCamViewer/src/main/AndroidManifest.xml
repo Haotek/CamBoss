@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tutk.Kalay.general"
+          android:versionCode="2015032601"
+          android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--<uses-permission android:name="android.permission.INSTALL_PACKAGES" />-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- It can make sure, the app wouldn't be available on devices doesn't have NFC -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- GCM -->
+    <permission
+        android:name="com.tutk.P2PCamLive.Kalay.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.tutk.P2PCamLive.Kalay.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:name="com.baidu.push.MyFrontiaApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.tutk.P2PCam264.SplashScreenActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.LaunchTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.baidu.push.MyPushMessageReceiver" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="api_key"
+            android:value="9tyxNZr7NckpxnjNlyy8n7nQ" />
+
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.DeviceListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.tutk.P2PCam264.DeviceOnCloud.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.tutk.P2PCam264.EasySettingWIFI.NOWAPActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.tutk.P2PCam264.onDropbox.LinkDropBoxActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" />
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-zo6kr8w12onxr8c" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.MultiViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Sherlock" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.APP_BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="p2pcamlive" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="addition.TUTK.AddDeviceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.LiveViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.tutk.P2PCam264.EditDeviceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.EventListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" />
+        <activity
+            android:name="com.tutk.P2PCam264.PlaybackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.tutk.P2PCam264.PhotoViewerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.GridViewGalleryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock"
+            android:uiOptions="splitActionBarWhenNarrow" />
+
+        <receiver
+            android:name="general.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.tutk.P2PCamLive.Kalay" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="general.IOTC_GCM_IntentService" />
+
+        <activity
+            android:name="com.tutk.P2PCam264.LocalPlaybackActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="addition.TUTK.qr_codeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.NicknameListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.SelectAPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="addition.TUTK.AddDeviceCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.PushSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.SecurityPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.FormatSDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.DeviceInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.TimeZoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.SetWiFiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.EventSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.FTPSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.settings.MailSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.NFC.NFCAddDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.Kalay.NFC.NFCConnectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" >
+
+            <!-- Handle notes detected from outside our application -->
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.ServiceDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a903f72a6ffdd06539302df50101d05b48d830ea" />
+        <activity
+            android:name="addition.TUTK.ForciblePwdChangingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+    </application>
+
+</manifest>

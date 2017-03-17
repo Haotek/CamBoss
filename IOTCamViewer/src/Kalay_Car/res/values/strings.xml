@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CamBoss</string>
+
+    <string name="txt_remove">Remove</string>
+    <string name="txt_switch_to_ap">Please Switch Camera to AP Mode</string>
+    <string name="txt_qrcode_not_support">裝置不支援此新增方式，請嘗試手動輸入</string>
+    <string name="txt_back">Back</string>
+    <string name="txt_qvga">QVGA</string>
+    <string name="txt_wdr">WDR</string>
+    <string name="txt_environment">Environment</string>
+    <string name="txt_time_lapse">Time Lapse</string>
+    <string name="txt_camera_settings">Camera Settings</string>
+    <string name="txt_oper_settings">Operation Settings</string>
+    <string name="txt_flip_title">Flip</string>
+    <string name="txt_time_lapse_recording">TimeLapse recording</string>
+    <string name="txt_flip">Flip</string>
+    <string name="txt_mirror">Mirror</string>
+    <string name="txt_cloud_recording">Cloud Recording</string>
+    <string name="tips_change_mode">Connecting Fail, Please make sure Camera is on AP Mode</string>
+    <string name="txt_pan_tilt">Auto Pan / Tilt</string>
+    <string name="txt_upgrade">Firmware upgrade</string>
+    <string name="tips_download_photo">Download Photos?</string>
+    <string name="tips_download_video">Download Videos?</string>
+    <string name="txt_1_sec">1 sec</string>
+    <string name="txt_5_sec">5 sec</string>
+    <string name="txt_10_sec">10 sec</string>
+    <string name="txt_30_sec">30 sec</string>
+    <string name="txt_1_min">1 min</string>
+    <string name="txt_5_min">5 min</string>
+    <string name="txt_10_min">10 min</string>
+    <string name="txt_30_min">30 min</string>
+    <string name="txt_1_hr">1 hr</string>
+    <string name="txt_2_hr">2 hr</string>
+    <string name="txt_3_hr">3 hr</string>
+    <string name="txt_1_day">1 day</string>
+
+    <string name="evttype_manual_recording">Manual recording</string>
+    <string name="evttype_emg_recording">Emergency recording</string>
+    <string name="evttype_time_lapse">Time Lapse</string>
+
+    <string name="txt_Please_add_a_device">No device on the list.\n Please add a device.</string>
+    <string name="txtNormal">Normal</string>
+    <string name="txt_wifi_settings">Wi-Fi Setting</string>
+    <string name="tips_add_dev_wifi">Assign Camera to Specific Wi-Fi AP</string>
+
+</resources>

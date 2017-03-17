@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/itemContainer"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+   	android:layout_marginTop="20dip"
+   	android:minHeight="40dip"
+   	style="@style/list_item_single">
+   
+       <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"  android:id="@+id/title"  style="@style/content_page_large_text" />
+</LinearLayout>	

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtSender"                        
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etSender"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/txtEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtReceiver"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etReceiver"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/txtEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/txtMailServer"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#F7B52C" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#F7B52C" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtServer"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etServer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:inputType="textUri"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtAccount"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etAcc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtPassword"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPwd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtPort"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPort"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtProtocol"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spProtocol"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_settings" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

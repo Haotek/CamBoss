@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/radioAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioSpeaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="" />
+        
+        <ImageView
+            android:id="@+id/imgSpeaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_speaker" />
+
+        <RadioButton
+            android:id="@+id/radioMicrophone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+        		<ImageView
+            android:id="@+id/imgMicrophone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_microphone" />
+		
+    </RadioGroup>
+
+</LinearLayout>

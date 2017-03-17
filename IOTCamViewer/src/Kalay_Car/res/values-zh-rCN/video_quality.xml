@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="video_quality">
+	    <item>最高</item>
+		<item>高</item>
+		<item>中</item>
+		<item>低</item>
+		<item>最低</item>
+	</string-array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/splash_bg" >
+
+	<!-- <com.tutk.P2PCam264.Splash android:id="@+id/splash"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"
+		android:drawSelectorOnTop="false"/> -->
+		
+		<TextView
+		    android:id="@+id/tvVersion"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="#FFFFFF"
+		    android:textStyle="bold"
+		    android:textSize="10sp"
+		    android:layout_gravity="bottom"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginBottom="10dp" />
+
+</FrameLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- main -->
+    <string name="app_name">Kalay Cam</string>
+    <string name="txt_edit">Edit</string>
+    <string name="txt_Live">Live</string>
+    <string name="txt_Devices">Camera</string>
+    <string name="ok">OK</string>
+    <string name="tips_remove_camera_confirm">Do you want to remove camera(s)?</string>
+    <string name="tips_remove_camera_monitor_confirm">Are you sure you want to remove this camera view?</string>
+    <string name="cancel">Cancel</string>
+    <string name="connstus_wrong_password">Incorrect Password</string>
+    <string name="connstus_disconnect">Offline</string>
+    <string name="connstus_connecting">Connecting…</string>
+    <string name="connstus_connected">Online</string>
+    <string name="connstus_unknown_device">Unknown Camera</string>
+    <string name="connection_timeout">Connection Timeout</string>
+    <string name="connstus_connection_failed">Connection failed</string>
+    <string name="tips_split_display_max">No more camera views can be added. Remove some camera views and try again.</string>
+    <string name="txt_split_display_max">No more camera views can be added</string>
+    <string name="tips_warning">Warning</string>
+    <string name="tips_add_camera_duplicated">This camera already exists. Please try to enter another UID.</string>
+    <string name="close">Close</string>
+    <string name="dialog_FormatSDCard">Format SD Card</string>
+    <string name="btnFormat">Format</string>
+    <string name="txtFormatSDCardTitle">Detect an Unrecognizable SD Card!</string>
+    <string name="txtFormatSDCardDesc">Format the SD Card to continue viedo recording. Format command will ERASE all data on your SD Card.</string>
+    <string name="chbShowTipsFormatSDCard">Show tips when an unrecognizable SD Card is detected.</string>
+
+   <!-- sliding menu -->
+    <string name="ctxViewEvent">Events</string>
+    <string name="ctxViewSnapshot">Album</string>
+    <string name="txt_Noti_settings">Settings</string>
+    <string name="optAbout">   About   </string>
+    <string name="optExit">Exit</string>
+    <string name="txt_Events_List">Event List</string>
+    <string name="txt_baidu_push">Baidu Push</string>
+    <string name="tips_baidu_push">We recommend that you enable Baidu push in Mainland China.</string>
+    <string name="txt_version">Version</string>
+    <string name="txtCopyRightInfo">Copyright© 2015 All rights reserved.</string>
+
+    <!-- add device -->
+    <string name="txtAddCamera">Add Camera</string>
+    <string name="txt_Cant_use_QR">Cannot scan QR Code?</string>
+    <string name="tips_dev_uid_character">Camera UID must be 20 characters long.</string>
+    <string name="tips_dev_security_code">Please enter password.</string>
+    <string name="tips_enter_AP">Please enter Camera SSID.</string>
+    <string name="hint_Deviece_SSID">Camera AP SSID</string>
+    <string name="hint_Deviece_Pwd">Camera password</string>
+    <string name="tips_camera_name">Camera name cannot be empty.</string>
+    <string name="tips_dev_uid">UID is not entered.</string>
+    <string name="tips_dev_uid_special_characters">UID must only contain 1-9 and A-Z</string>
+    <string name="hint_WIFI_SSID">Wi-Fi SSID</string>
+    <string name="hint_WIFI_Pwd">Wi-Fi password</string>
+    <string name="txt_searching_device">Searching for camera, please wait.</string>
+    <string name="tips_enter_WIFI">Please enter Wi-Fi SSID.</string>
+    <string name="tips_cant_connect_AP">Cannot connect to the camera. Please check camera/’s AP mode and AP/’s password.</string>
+    <string name="txt_Wired">Wired</string>
+    <string name="txt_Wireless">Wireless</string>
+    <string name="txtName">Camera Name:</string>
+    <string name="txtUID">UID:</string>
+    <string name="txtPassword">Camera Password:</string>
+    <string name="tips_add_camera_ok">Camera successfully added.</string>
+    <string name="tips_failed_create_session">Failed to establish connection with camera. Please check your camera and try again.</string>
+    <string name="tips_failed_create_channel">Failed to create command channel with camera. Please try again.</string>
+    <string name="tips_failed_get_wifilist">Failed to get Wi-Fi AP list from camera. Please try again.</string>
+    <string name="tips_failed_set_wifi">Failed to set Wi-Fi configuration for camera. Please try again.</string>
+    <string name="txt_Devices_List">Camera List</string>
+
+    <!-- live view -->
+    <string name="recording_tips_size">There is not enough space to save video</string>
+    <string name="recording_tips_format">Video file format not supported</string>
+    <string name="txtQuality">Quality:</string>
+    <string name="txtFPS">FPS:</string>
+    <string name="txtBPS">BPS:</string>
+    <string name="txtOnlineNumber">Viewers:</string>
+    <string name="txtFrameRatio">Packet Ratio:</string>
+    <string name="txtGood">Good</string>
+    <string name="txtBad">Poor</string>
+    <string name="connmode_p2p">P2P</string>
+    <string name="connmode_relay">Relay</string>
+    <string name="connmode_lan">LAN</string>
+    <string name="none">None</string>
+    <string name="txt_reflash_speaker">Press to talk</string>
+    <string name="txt_preset">Preset</string>
+    <string name="tips_preset">Click to move to preset positon; longpress to save.</string>
+    <string name="tips_preset_successful">successfully saved.</string>
+    <string name="tips_preset_failed">Saving failed.</string>
+    <string name="txt_brightness">Brightness</string>
+    <string name="txt_contrast">Contrast</string>
+    <string name="txt_cruise">Cruise Mode</string>
+    <string name="txt_lowest">Lowest</string>
+    <string name="txt_low">Low</string>
+    <string name="txt_medium">Medium</string>
+    <string name="txt_high">High</string>
+    <string name="txt_highest">Highest</string>
+    <string name="txt_pan">Auto Pan</string>
+    <string name="txt_tilt">Auto Tilt</string>
+    <string name="txt_stop">Stop</string>
+    <string name="txtmQuality">Video Quality</string>
+    <string name="txtVideoQualityHigh">High</string>
+    <string name="txtVideoQualityMedium">Medium</string>
+    <string name="txtVideoQualityLow">Low</string>
+    <string name="txtmEnvironment">Environment Mode</string>
+    <string name="txtmEnvironment50">50hz</string>
+    <string name="txtmEnvironment60">60hz</string>
+    <string name="txtmEnvironmentout">Outdoor Mode</string>
+    <string name="txtmEnvironmentnight">Night Mode</string>
+    <string name="tips_snapshot_ok">Successfully took a snapshot</string>
+
+    <!-- event list -->
+    <string name="tips_search_within_an_hour">Within an hour</string>
+    <string name="tips_search_within_half_a_day">Within half a day</string>
+    <string name="tips_search_within_a_day">Within a day</string>
+    <string name="tips_search_within_a_week">Within a week</string>
+    <string name="tips_search_custom">Specify time range</string>
+    <string name="txt_done">Done</string>
+    <string name="dialog_EventSearch">Search Event</string>
+    <string name="txtSearchEventDuration">Search events:</string>
+    <string name="pull_to_refresh">Pull down to refresh</string>
+    <string name="release_to_refresh">release to refresh</string>
+    <string name="refreshing">Refreshing&#8230;</string>
+    <string name="txtSearchEventFrom">From</string>
+    <string name="txtSearchEventTo">To</string>
+    <string name="txtSearchEventType">Event</string>
+    <string name="txtLoadEventList">Loading…</string>
+    <string name="tips_search_event_no_result">No result found.</string>
+    <string name="txtNoResultFound">No result found.</string>
+    <string name="txtCameraOffline">Camera offline</string>
+    <string name="evttype_all">All</string>
+    <string name="evttype_motion_detection">Motion Detection</string>
+    <string name="evttype_video_lost">Video Lost</string>
+    <string name="evttype_io_alarm">IO Alarm</string>
+    <string name="evttype_motion_pass">Motion Detection</string>
+    <string name="evttype_video_resume">Resume Video</string>
+    <string name="evttype_io_alarm_pass">IO Alarm </string>
+    <string name="evttype_expt_reboot">System reboot</string>
+    <string name="evttype_sd_fault">Cannot detect SD Card</string>
+    <string name="evttype_fulltime_recording">Continuous recording</string>
+    <string name="dialog_Playback">Playback</string>
+    <string name="tips_play_record_failed">Fail to play video.</string>
+    <string name="tips_play_record_end">The video has finished playing.</string>
+    <string name="tips_play_record_timeout">Can not obtain remote video records</string>
+
+    <!-- gallery -->
+    <string name="dlgAreYouSureToDeleteThisSnapshot">Are you sure you want to delete the photo?</string>
+    <string name="txt_snapshot_title">Photos</string>
+    <string name="txt_video_title">Videos</string>
+    <string name="txt_no_photos">No Photos</string>
+
+    <!-- edit device -->
+    <string name="txtDeviceSetting">Camera Settings</string>
+    <string name="txtOldPassword">Old:</string>
+    <string name="txtNewPassword">New:</string>
+    <string name="txtConfirmPassword">Confirm:</string>
+    <string name="txtSecuritySetting">Change Password</string>
+    <string name="tips_all_field_can_not_empty">All fields are mandatory.</string>
+    <string name="txt_pls_enter_pwd">Please enter the password</string>
+    <string name="tips_old_password_is_wrong">The old password is incorrect.</string>
+    <string name="tips_new_passwords_do_not_match">New password and the confirmation password do not match.</string>
+    <string name="tips_modify_security_code_ok">Password successfully changed. Please wait for the camera to reconnect.</string>
+    <string name="txt_processing">Processing&#8230;</string>
+    <string name="txtWiFiSetting">Wi-Fi Network</string>
+    <string name="tips_wifi_retrieving">Scanning…</string>
+    <string name="txtNotiInterval">Notification Interval</string>
+    <string name="txtRecordSetting">Recording Mode</string>
+    <string name="btnFormatSDCard">Format SD Card</string>
+    <string name="txtFormatSDCard">Format command will ERASE all data on SD Card.</string>
+    <string name="tips_format_sdcard_confirm">Format command will ERASE all data on SD Card, continue?</string>
+    <string name="tips_format_sdcard_success">Successfully formatted SD Card.</string>
+    <string name="tips_format_sdcard_failed">Fail to format SD Card.</string>
+    <string name="txtTimeZoneSetting">Time Zone</string>
+    <string name="txtDeviceInfo">Camera Information</string>
+    <string name="txtDeviceModel">Model:</string>
+    <string name="txtVenderName">Vender:</string>
+    <string name="txtDeviceVersion">Version:</string>
+    <string name="txtStorageTotalSize">Total Space:</string>
+    <string name="txtStorageFreeSize">Free Space:</string>
+    <string name="txtEventSetting">Event Settings</string>
+    <string name="txtMotionDetectionSetting">Motion Detection:</string>
+    <string name="txtFTPSettings">FTP Settings</string>
+    <string name="txtMailSettings">Mail Settings</string>
+    <string name="txtMonition">Monition Detection</string>
+    <string name="txtSens">Motion Sensitivity:</string>
+    <string name="txtPreset">Preset:</string>
+    <string name="txtMail">Mail Notification</string>
+    <string name="txtFTP">FTP Upload</string>
+    <string name="txtFTPInterval">FTP Upload Interval:</string>
+    <string name="txtFTPServer">FTP Server:</string>
+    <string name="txtPort">Port:</string>
+    <string name="txtAccount">Account:</string>
+    <string name="txtPath">Path:</string>
+    <string name="txtMailServer">Mail Server</string>
+    <string name="txtSender">Sender:</string>
+    <string name="txtReceiver">Receiver:</string>
+    <string name="txtServer">Server:</string>
+    <string name="txtProtocol">Protocol:</string>
+    <string name="txtEmailAddress">Email address</string>
+    <string name="txt_remove">Remove</string>
+    <string name="tips_remove_camera">Remove this camera</string>
+    <string name="tips_remove_camera_ok">Remove camera successfully.</string>
+    <string name="txt_reconnect_camera">Reconnect</string>
+    <string name="tips_edit_camera_ok">Edit camera successfully.</string>
+
+    <!-- local recording -->
+    <string name="txt_no_videos">No videos found</string>
+    <string name="dlgAreYouSureToDeleteThisRecord">Are you sure you want to delete the video?</string>
+    <string name="dialog_no_app">Your media player does not support the file format.</string>
+    <string name="txt_intent_to_app">The media player does not support the file format. Please download another video player (MX Player) to view this video.</string>
+
+    <!-- notification -->
+    <string name="ntfAppRunning">%s is running…</string>
+    <string name="ntfIncomingEvent">Incoming event from %s</string>
+    <string name="ntfCameraRunning">Running with %d camera(s).</string>
+    <string name="ntfLastEventIs">The lastest event is %s.</string>
+
+
+    <string name="txt_NFC">NFC</string>
+    <string name="txt_manual">Manually add</string>
+    <string name="txt_connect">Connect</string>
+    <string name="alert_device_nfc_open">NFC is not enable. Do you wanna enable it?</string>
+    <string name="tips_please_keep_close">Please touch the tag till mobile phone vibrate.</string>
+    <string name="tips_please_check_dev">Please check if your device is up and runing.</string>
+    <string name="tips_please_retry">Please try again.</string>
+    <string name="txtlink">Link to Dropbox</string>
+    <string name="txtunlink">Unlink Dropbox</string>
+    <string name="optDropbox">Dropbox Recording</string>
+
+    <string name="txt_please_change_pwd">Please change the default device password to ensure security.</string>
+    <string name="txt_new_pwd">New Password</string>
+    <string name="txt_confirm_pwd">Confirm Password</string>
+    <string name="txt_create_pwd_by_rules">Please create your password using a mix of letters and numbers between 8 and 20 characters.</string>
+    <string name="tips_make_sure_rules">Please make sure your new device password is a mix of letters and numbers between 8 and 20 characters.</string>
+    <string name="txt_update_dev_pwd">Update Device Password</string>
+    <string name="txt_camera">Camera</string>
+    <string name="tips_pws_not_correct">The device password you entered is not correct. Please check.</string>
+    <string name="tips_check_failed">Cannot connect to the Internet. There may be a problem with your network, device or router. Please check.</string>
+    <string name="tips_check_unknown">Cannot connect to the device. There may be a problem with your network, device or router. Please check.</string>
+    <string name="tips_network_unreachable">Failed to establish connection with camera. Please check your router and try again.</string>
+    <string name="tips_change_pwd_timeout">Connection timed out. There may be a problem with your device or Internet connection. Device password may be updated. Please try both passwords when adding device.</string>
+</resources>

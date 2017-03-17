@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/touch_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/uidlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="30dp" >            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtPassword"
+                    android:textColor="@color/line" />
+
+                <EditText
+                    android:id="@+id/edtSecurityCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtName"
+                    android:textColor="@color/line" />
+
+                <EditText
+                    android:id="@+id/edtNickName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Camera"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/line" />
+            
+            <LinearLayout
+                android:id="@+id/layoutErr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+                
+                <TextView
+                    android:id="@+id/tvErr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ERR"
+                    android:textColor="#CC0000" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutWIFI"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_wifi" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvSSID"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/white"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/line" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_password" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtWifiPWD"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/hint_WIFI_Pwd"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/line" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button 
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_nfc_connect"
+        android:text="@string/txt_connect"
+        android:textColor="@drawable/txt_nfc_connect" />
+
+</LinearLayout>

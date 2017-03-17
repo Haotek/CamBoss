@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- When selected, use grey -->
+    <item android:drawable="@drawable/more_delete_clicked"
+          android:state_selected="true" />
+    <item android:state_pressed="true" android:drawable="@drawable/more_delete_clicked"/>  
+    <!-- When not selected, use white-->
+    <item android:drawable="@drawable/more_delete" />
+</selector>

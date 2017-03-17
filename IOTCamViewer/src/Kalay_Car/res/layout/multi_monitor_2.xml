@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="1">
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+
+	        <FrameLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+		        <Button
+		            android:id="@+id/btn_monitor_place_1"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" />
+		
+		    	<com.tutk.IOTC.Monitor 
+		    	    android:id="@+id/mv_monitor_0"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent" />
+	    	</FrameLayout>
+	        	    		        
+		    <Button
+		        android:layout_width="2dp"
+		        android:layout_height="match_parent"
+		        android:background="@color/clr_splt" />
+	        
+	        <FrameLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+		        <Button
+		            android:id="@+id/btn_monitor_place_2"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:scaleType="centerCrop" />
+		
+	        	<com.tutk.IOTC.Monitor 
+		    	    android:id="@+id/mv_monitor_1"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent" />
+	    	</FrameLayout>
+	        	    		
+	    </LinearLayout>
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"
+	        android:background="@color/clr_splt" />
+	</LinearLayout>
+	
+	
+	
+	
+</LinearLayout>

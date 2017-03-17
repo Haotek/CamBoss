@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_navi"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:visibility="gone" />
+    
+    <Button
+        android:id="@+id/bar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bar_right_btnCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/ipcam_ch"
+        android:paddingRight="12dp"
+        android:text="CH1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/bar_right_imgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="15dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/bar_text_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bar_text"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:visibility="gone">
+        </TextView>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/bar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:visibility="gone" >
+    </ImageButton>
+
+    <RelativeLayout
+        android:id="@+id/bar_gallery"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/midline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/bar_btn_photo"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/midline"
+            android:background="@drawable/btn_photo"
+            android:text="@string/txt_snapshot_title"
+            android:textColor="@drawable/txt_color_gallery"
+            android:textSize="14sp" />
+        
+        <Button
+            android:id="@+id/bar_btn_video"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/midline"
+            android:background="@drawable/btn_video"
+            android:text="@string/txt_video_title"
+            android:textColor="@drawable/txt_color_gallery"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+</RelativeLayout>

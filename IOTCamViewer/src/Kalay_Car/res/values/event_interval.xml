@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="event_interval">
+	    <item>No Limits</item>
+		<item>1 min</item>
+		<item>3 min</item>
+		<item>5 min</item>
+		<item>10 min</item>
+		<item>30 min</item>
+		<item>off</item>
+	</string-array>
+</resources>
+

@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seltecap_white"
+    android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/context_text"
+	    android:layout_centerInParent="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#ff000000"
+		android:textSize="22sp"></TextView>	
+	
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/titleBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_navi" >
+
+        <ImageButton
+            android:id="@+id/bar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_moreset_switch" >
+        </ImageButton>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="5dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/bar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/txt_edit"
+            android:textColor="@drawable/text_color_title_bar"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBarLayout"
+        android:background="@drawable/bg" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeTop"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="#00000000" >
+
+            <Button
+                android:id="@+id/midline"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/btnMultiView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/midline"
+                android:background="@drawable/btn_switch_main_left"
+                android:text="@string/txt_Live"
+                android:textColor="@drawable/txt_color_main"
+                android:textSize="@dimen/main_tab" />
+
+            <Button
+                android:id="@+id/btnCameraLis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/midline"
+                android:background="@drawable/btn_switch_main_right"
+                android:text="@string/txt_Devices"
+                android:textColor="@drawable/txt_color_main"
+                android:textSize="@dimen/main_tab" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RelativeTop"
+            android:layout_marginBottom="20dp" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

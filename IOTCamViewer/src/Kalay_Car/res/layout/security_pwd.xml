@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFF4"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_silver_light_corner"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtOldPassword"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/edtOldPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="10dp"
+                android:background="#C8C9CA"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginBottom="15dp"
+                android:background="#C8C9CA"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtNewPassword"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/edtNewPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="10dp"
+                android:background="#C8C9CA"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginBottom="15dp"
+                android:background="#C8C9CA"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtConfirmPassword"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/edtConfirmPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/mask_black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_processing"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</RelativeLayout>

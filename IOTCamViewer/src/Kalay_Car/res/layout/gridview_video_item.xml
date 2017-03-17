@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+   	<ImageView android:id="@+id/video_image"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_centerInParent="true" >
+    </ImageView>
+    
+   	<RelativeLayout
+        android:layout_width="84dp"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_shadow">
+
+   	    <ImageView 
+   	        android:layout_height="wrap_content"
+   	        android:layout_width="wrap_content"
+   	        android:layout_alignParentLeft="true"
+   	        android:layout_centerVertical="true"
+   	        android:layout_marginLeft="3dp"
+   	        android:background="@drawable/ic_camera" />
+   	    
+   	    <TextView 
+   	        android:id="@+id/txt_video_dur"
+   	        android:layout_height="wrap_content"
+   	        android:layout_width="wrap_content"
+   	        android:layout_alignParentRight="true"
+   	        android:layout_centerVertical="true"
+   	        android:textColor="#FFFFFF"
+   	        android:text="00:00" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/video_image_check"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/line" />
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+<!-- 	<ImageView
+	    android:id="@+id/video_image_check"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_below="@+id/video_image"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="25dp"
+	    android:src="@drawable/delet_choose" /> -->
+
+</RelativeLayout>

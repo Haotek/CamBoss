@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="185dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_modewindows"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/txtmQuality"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnMAX"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@drawable/txt_color_dialog"
+        android:text="@string/txtVideoQualityHigh"
+        android:background="@drawable/btn_switch_dialog"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="0.2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF" />
+    
+    <Button
+        android:id="@+id/btnMID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_switch_dialog"
+        android:textColor="@drawable/txt_color_dialog"
+        android:text="@string/txtVideoQualityMedium"
+        android:textSize="18sp" />
+    
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="0.2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF" />
+    
+    <Button
+        android:id="@+id/btnMIN"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_switch_dialog"
+        android:textColor="@drawable/txt_color_dialog"
+        android:text="@string/txtVideoQualityLow"
+        android:textSize="18sp" />
+
+</LinearLayout>

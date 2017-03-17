@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/drop_switchbk_off" />
+    <item android:state_pressed="true"  android:drawable="@drawable/drop_switchbk_m" />
+    <item android:state_checked="true"  android:drawable="@drawable/drop_switchbk_on" />
+    <item                               android:drawable="@drawable/drop_switchbk_off" />
+</selector>

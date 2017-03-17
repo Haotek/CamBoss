@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:padding="10dp" >
+    
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+    
+    <TextView
+        android:id="@+id/tvUTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C8C9CA"
+        android:textSize="10sp" />   
+
+</LinearLayout>

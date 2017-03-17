@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="recording_mode">
+	    <item>Off</item>
+		<item>Full Time</item>
+		<item>Alarm</item>
+	</string-array>
+</resources>

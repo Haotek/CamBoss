@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- main -->
+    <string name="txt_edit">編輯</string>
+    <string name="txt_Live">實況</string>
+    <string name="txt_Devices">設備</string>
+    <string name="ok">確定</string>
+    <string name="tips_remove_camera_confirm">是否移除該設備?</string>
+    <string name="tips_remove_camera_monitor_confirm">是否移除該攝影畫面?</string>
+    <string name="cancel">取消</string>
+    <string name="connstus_wrong_password">密碼錯誤</string>
+    <string name="connstus_disconnect">未連線</string>
+    <string name="connstus_connecting">正在連線&#8230;</string>
+    <string name="connstus_connected">已連線</string>
+    <string name="connstus_unknown_device">未知設備</string>
+    <string name="connection_timeout">連線逾時</string>
+    <string name="connstus_connection_failed">連線失敗</string>
+    <string name="tips_split_display_max">分割畫面已滿，請刪除部分畫面再試。</string>
+    <string name="txt_split_display_max">分割畫面已滿</string>
+    <string name="tips_warning">警告</string>
+    <string name="tips_add_camera_duplicated">該設備已存在，請輸入另一個 UID。</string>
+    <string name="close">關閉</string>
+    <string name="dialog_FormatSDCard">格式化 SD Card</string>
+    <string name="btnFormat">格式化</string>
+    <string name="txtFormatSDCardTitle">無法識別的 SD Card</string>
+    <string name="txtFormatSDCardDesc">您必須格式化 SD Card 後才能繼續使用錄影功能，格式化指令將會清除 SD Card 內所有資料。</string>
+    <string name="chbShowTipsFormatSDCard">當偵測到無法識別 SD Card 時顯示此訊息</string>
+
+    <!-- sliding menu -->
+    <string name="ctxViewEvent">事件偵測</string>
+    <string name="ctxViewSnapshot">圖片/錄影</string>
+    <string name="txt_Noti_settings">設定</string>
+    <string name="optAbout">關於</string>
+    <string name="optExit">結束程式</string>
+    <string name="txt_Events_List">事件列表</string>
+    <string name="txt_baidu_push">百度雲推播</string>
+    <string name="tips_baidu_push">在中國使用本軟體時,建議您將推播預設為百度雲推播</string>
+    <string name="txt_version">版本</string>
+    <string name="txtCopyRightInfo">Copyright© 2015 All rights reserved.</string>
+
+    <!-- add device -->
+    <string name="txtAddCamera">新增設備</string>
+    <string name="txt_Cant_use_QR">無法使用 QR Code?</string>
+    <string name="tips_dev_uid_character">設備 UID 必須為 20 個字元。</string>
+    <string name="tips_dev_security_code">請輸入密碼。</string>
+    <string name="tips_enter_AP">請輸入設備 SSID。</string>
+    <string name="hint_Deviece_SSID">設備 AP SSID</string>
+    <string name="hint_Deviece_Pwd">設備 AP 密碼</string>
+    <string name="tips_camera_name">設備名稱請勿空白。</string>
+    <string name="tips_dev_uid">請輸入 UID </string>
+    <string name="tips_dev_uid_special_characters">UID只包含1-9和A-Z</string>
+    <string name="hint_WIFI_SSID">Wi-Fi SSID</string>
+    <string name="hint_WIFI_Pwd">Wi-Fi 密碼</string>
+    <string name="txt_searching_device">搜尋設備中，請稍等片刻。</string>
+    <string name="tips_enter_WIFI">請輸入Wi-Fi SSID。</string>
+    <string name="tips_cant_connect_AP">無法連線至設備。請確認設備的AP模式與AP密碼。</string>
+    <string name="txt_Wired">有線設備</string>
+    <string name="txt_Wireless">無線設備</string>
+    <string name="txtName">設備名稱:</string>
+    <string name="txtUID">UID:</string>
+    <string name="txtPassword">設備密碼:</string>
+    <string name="tips_add_camera_ok">成功新增設備。</string>
+    <string name="tips_failed_create_session">無法建立與設備的連線，請檢查設備並再試一次。</string>
+    <string name="tips_failed_create_channel">無法建立與設備之指令通道。請再試一次。</string>
+    <string name="tips_failed_get_wifilist">無法由設備取得周邊Wi-Fi裝置清單，請再試一次。</string>
+    <string name="tips_failed_set_wifi">無法設定設備的Wi-Fi參數，請再試一次。</string>
+    <string name="txt_Devices_List">設備列表</string>
+
+    <!-- live view -->
+    <string name="recording_tips_size">儲存空間不足</string>
+    <string name="recording_tips_format">不支援此設備之影像格式</string>
+    <string name="txtQuality">收視狀況:</string>
+    <string name="txtFPS">FPS:</string>
+    <string name="txtBPS">BPS:</string>
+    <string name="txtOnlineNumber">線上人數:</string>
+    <string name="txtFrameRatio">封包比率:</string>
+    <string name="txtGood">佳</string>
+    <string name="txtBad">差</string>
+    <string name="connmode_p2p">P2P</string>
+    <string name="connmode_relay">Relay</string>
+    <string name="connmode_lan">區域網路</string>
+    <string name="none">無</string>
+    <string name="txt_reflash_speaker">按住進行通話</string>
+    <string name="txt_preset">預置位</string>
+    <string name="tips_preset">點擊以移動至位置，長按以儲存位置。</string>
+    <string name="tips_preset_successful">儲存成功。</string>
+    <string name="tips_preset_failed">儲存失敗。</string>
+    <string name="txt_brightness">明暗</string>
+    <string name="txt_contrast">對比</string>
+    <string name="txt_cruise">巡航模式</string>
+    <string name="txt_lowest">最低</string>
+    <string name="txt_low">低</string>
+    <string name="txt_medium">適中</string>
+    <string name="txt_high">高</string>
+    <string name="txt_highest">最高</string>
+    <string name="txt_pan">水平移動</string>
+    <string name="txt_tilt">垂直移動</string>
+    <string name="txt_stop">停止</string>
+    <string name="txtmQuality">影像品質</string>
+    <string name="txtVideoQualityHigh">稍高</string>
+    <string name="txtVideoQualityMedium">適中</string>
+    <string name="txtVideoQualityLow">低</string>
+    <string name="txtmEnvironment">環境模式</string>
+    <string name="txtmEnvironment50">室內模式 (50hz)</string>
+    <string name="txtmEnvironment60">室內模式 (60hz)</string>
+    <string name="txtmEnvironmentout">室外模式</string>
+    <string name="txtmEnvironmentnight">夜間模式</string>
+    <string name="tips_snapshot_ok">快照成功</string>
+
+    <!-- event list -->
+    <string name="tips_search_within_an_hour">一小時內</string>
+    <string name="tips_search_within_half_a_day">半天內</string>
+    <string name="tips_search_within_a_day">一天內</string>
+    <string name="tips_search_within_a_week">一週內</string>
+    <string name="tips_search_custom">自定義</string>
+    <string name="txt_done">完成</string>
+    <string name="dialog_EventSearch">事件搜尋</string>
+    <string name="txtSearchEventDuration">搜尋事件區間：</string>
+    <string name="pull_to_refresh">下拉重新整理</string>
+    <string name="release_to_refresh">放開重新整理</string>
+    <string name="refreshing">重新整理中...</string>
+    <string name="txtSearchEventFrom">從</string>
+    <string name="txtSearchEventTo">至</string>
+    <string name="txtSearchEventType">事件</string>
+    <string name="txtLoadEventList">讀取中…</string>
+    <string name="tips_search_event_no_result">未找到任何記錄。</string>
+    <string name="txtNoResultFound">未找到任何記錄。</string>
+    <string name="txtCameraOffline">設備離線</string>
+    <string name="evttype_all">全部</string>
+    <string name="evttype_motion_detection">位移偵測</string>
+    <string name="evttype_video_lost">影像遺失</string>
+    <string name="evttype_io_alarm">IO 警示</string>
+    <string name="evttype_motion_pass">位移偵測</string>
+    <string name="evttype_video_resume">影像回復</string>
+    <string name="evttype_io_alarm_pass">IO 警示</string>
+    <string name="evttype_expt_reboot">系統意外重啟</string>
+    <string name="evttype_sd_fault">SD 卡 錯誤</string>
+    <string name="evttype_fulltime_recording">全時錄影</string>
+    <string name="dialog_Playback">錄影回放</string>
+    <string name="tips_play_record_failed">播放錄影失敗。</string>
+    <string name="tips_play_record_end">影片已播畢。</string>
+    <string name="tips_play_record_timeout">無法獲取遠端錄影檔案！</string>
+
+    <!-- gallery -->
+    <string name="dlgAreYouSureToDeleteThisSnapshot">是否要刪除此圖片？</string>
+    <string name="txt_snapshot_title">影像快照</string>
+    <string name="txt_video_title">錄影紀錄</string>
+    <string name="txt_no_photos">查無快照</string>
+
+    <!-- edit device -->
+    <string name="txtDeviceSetting">裝置設定</string>
+    <string name="txtOldPassword">舊密碼:</string>
+    <string name="txtNewPassword">新密碼:</string>
+    <string name="txtConfirmPassword">確認:</string>
+    <string name="txtSecuritySetting">更改密碼</string>
+    <string name="tips_all_field_can_not_empty">請輸入所有欄位。</string>
+    <string name="txt_pls_enter_pwd">請輸入密碼</string>
+    <string name="tips_old_password_is_wrong">舊密碼輸入錯誤。</string>
+    <string name="tips_new_passwords_do_not_match">兩次輸入的新密碼不相符。</string>
+    <string name="tips_modify_security_code_ok">變更密碼成功，該設備稍後將重新連線。</string>
+    <string name="txt_processing">處理中&#8230;</string>
+    <string name="txtWiFiSetting">無線網路</string>
+    <string name="tips_wifi_retrieving">掃描中…</string>
+    <string name="txtNotiInterval">推播間隔</string>
+    <string name="txtRecordSetting">錄影模式</string>
+    <string name="btnFormatSDCard">格式化 SD Card</string>
+    <string name="txtFormatSDCard">格式化指令將會清除 SD Card 内所有資料.</string>
+    <string name="tips_format_sdcard_confirm">格式化命令將於清除 SD Card 內所有資料，繼續?</string>
+    <string name="tips_format_sdcard_success">格式化成功</string>
+    <string name="tips_format_sdcard_failed">格式化失敗</string>
+    <string name="txtTimeZoneSetting">時區</string>
+    <string name="txtDeviceInfo">設備資訊</string>
+    <string name="txtDeviceModel">型號:</string>
+    <string name="txtVenderName">廠商:</string>
+    <string name="txtDeviceVersion">版本:</string>
+    <string name="txtStorageTotalSize">全部空間:</string>
+    <string name="txtStorageFreeSize">可用空間:</string>
+    <string name="txtEventSetting">事件設定</string>
+    <string name="txtMotionDetectionSetting">位移偵測:</string>
+    <string name="txtFTPSettings">FTP 設定</string>
+    <string name="txtMailSettings">郵件設定</string>
+    <string name="txtMonition">偵測開關</string>
+    <string name="txtSens">偵測靈敏度</string>
+    <string name="txtPreset">預置位:</string>
+    <string name="txtMail">郵件開關</string>
+    <string name="txtFTP">FTP 開關</string>
+    <string name="txtFTPInterval">FTP 上傳間隔:</string>
+    <string name="txtFTPServer">FTP 伺服器:</string>
+    <string name="txtPort">Port:</string>
+    <string name="txtAccount">使用者:</string>
+    <string name="txtPath">路徑:</string>
+    <string name="txtMailServer">郵件伺服器</string>
+    <string name="txtSender">寄件者:</string>
+    <string name="txtReceiver">收件者:</string>
+    <string name="txtServer">伺服器:</string>
+    <string name="txtProtocol">Protocol:</string>
+    <string name="txtEmailAddress">Email 地址</string>
+    <string name="txt_remove">移除</string>
+    <string name="tips_remove_camera">移除設備</string>
+    <string name="tips_remove_camera_ok">刪除設備成功。</string>
+    <string name="txt_reconnect_camera">重新連線</string>
+    <string name="tips_edit_camera_ok">編輯設備成功。</string>
+
+    <!-- local recording -->
+    <string name="txt_no_videos">查無錄影</string>
+    <string name="dlgAreYouSureToDeleteThisRecord">是否要刪除此影片？</string>
+    <string name="dialog_no_app">播放器不支援</string>
+    <string name="txt_intent_to_app">您的手機播放器不支援播放此檔案，需要下載額外的播放軟體來觀看此影片 (MX Player)</string>
+
+    <!-- notification -->
+    <string name="ntfAppRunning">%s 正在執行中…</string>
+    <string name="ntfIncomingEvent">從 %s 接收事件警示</string>
+    <string name="ntfCameraRunning">攝影機連線中 (%d)</string>
+    <string name="ntfLastEventIs">新進事件: %s</string>
+
+
+    <string name="txt_NFC">NFC</string>
+    <string name="txt_manual">手動新增</string>
+    <string name="txt_connect">連線</string>
+    <string name="alert_device_nfc_open">NFC 尚未開啟，是否開啟 NFC？</string>
+    <string name="tips_please_keep_close">請靠近 IP Cam NFC位置\n直到手機震動</string>
+    <string name="tips_please_check_dev">請確認設備是否正常運作。</string>
+    <string name="tips_please_retry">請重試。</string>
+    <string name="txtlink">連線至 Dropbox</string>
+    <string name="txtunlink">從 Dropbox 斷線</string>
+    <string name="optDropbox">DropBox 錄影</string>
+
+    <string name="txt_please_change_pwd">請改變預設設備密碼,以確保安全。</string>
+    <string name="txt_new_pwd">新密碼</string>
+    <string name="txt_confirm_pwd">確認密碼</string>
+    <string name="txt_create_pwd_by_rules">請使用8到20個字元之間的字母和數字來建立密碼。</string>
+    <string name="tips_make_sure_rules">請確定你的新設備密碼是8到20個字元之間的字母和數字組合。</string>
+    <string name="txt_update_dev_pwd">更新設備密碼</string>
+    <string name="txt_camera">攝影機</string>
+    <string name="tips_pws_not_correct">設備密碼錯誤，請重新輸入。</string>
+    <string name="tips_check_failed">無法連線。可能是網路、設備或路由器發生問題，請再次確認。</string>
+    <string name="tips_check_unknown">連線設備失敗。可能是網路、設備或路由器發生問題，請再次確認。</string>
+    <string name="tips_network_unreachable">無法建立與設備的連線，請檢查路由器並再試一次。</string>
+    <string name="tips_change_pwd_timeout">連線逾時！可能是設備尚未回應或是網路發生問題。設備密碼可能已經更新成功，請新增時再次確認。</string>
+</resources>

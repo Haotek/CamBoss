@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    
+    <LinearLayout
+                android:id="@+id/panelDeviceInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp" >
+           
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textColor="#000000"
+                        android:text="@string/txtDeviceModel" />
+
+                    <TextView
+                        android:id="@+id/txtDeviceModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000000" />
+                    
+                </RelativeLayout>
+
+
+		
+				<ImageView
+				    android:layout_marginBottom="10dp"
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.7dp"
+				    android:background="#C8C9CA"
+                    android:visibility="gone" />
+				                        
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textColor="#000000"
+                        android:text="@string/txtDeviceVersion"/>
+
+                    <TextView
+                        android:id="@+id/txtDeviceVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000000" />
+                    
+                </RelativeLayout>
+				
+
+		
+				<ImageView
+				    android:layout_marginBottom="10dp"
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.7dp"
+				    android:background="#C8C9CA"/>	
+				    
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textColor="#000000"
+                        android:text="@string/txtVenderName" />
+
+                    <TextView
+                        android:id="@+id/txtVenderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000000" />
+                    
+                </RelativeLayout>
+
+
+		
+				<ImageView
+				    android:layout_marginBottom="10dp"
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="0.7dp"
+				    android:background="#C8C9CA"
+                    android:visibility="gone" />
+				                        
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textColor="#000000"
+                        android:text="@string/txtStorageTotalSize"/>
+                                     
+                    <TextView
+                        android:id="@+id/txtStorageTotalSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000000" />					
+                </RelativeLayout>
+
+
+		
+				<ImageView
+				    android:layout_marginBottom="10dp"
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent"
+				    android:layout_height="0.7dp"
+				    android:background="#C8C9CA"/>	
+				                        
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textColor="#000000"
+                        android:text="@string/txtStorageFreeSize" />
+
+                    <TextView
+                        android:id="@+id/txtStorageFreeSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000000" />
+                    
+                </RelativeLayout>
+                
+            </LinearLayout>
+
+</LinearLayout>

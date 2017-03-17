@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/touch_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtUID"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/edtUID"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtName"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/edtNickName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C8C9CA" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#C8C9CA" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/txtPassword"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/edtSecurityCode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutPwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtSecuritySetting"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnPwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/btn_next" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutWiFi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtWiFiSetting"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#F7B52C" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#F7B52C" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/btnWiFi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/btn_next" />
+
+                    <TextView
+                        android:id="@+id/txtWiFi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/txtWiFiSetting"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNotiInterval"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtNotiInterval"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#F7B52C" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#F7B52C" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spNotiInterval"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_settings" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRecording"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtRecordSetting"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#F7B52C" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#F7B52C" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spRecording"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_settings" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTimeZone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtTimeZoneSetting"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#F7B52C" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#F7B52C" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/btnTimeZone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/btn_next" />
+
+                    <TextView
+                        android:id="@+id/txtTimeZone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/txtTimeZoneSetting"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutSD"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnFormatSDCard"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnSD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/btn_next" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEvent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/btnEvent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/btn_next" />
+
+                    <TextView
+                        android:id="@+id/tvEvent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/txtEventSetting"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutFTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#F7B52C" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#F7B52C" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageButton
+                            android:id="@+id/btnFTP"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/btn_next" />
+
+                        <TextView
+                            android:id="@+id/tvFTP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/txtFTPSettings"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#F7B52C" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#F7B52C" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageButton
+                            android:id="@+id/btnMail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/btn_next" />
+
+                        <TextView
+                            android:id="@+id/tvMail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/txtMailSettings"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDeviceInfo"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/btn_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutUpgrade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_upgrade"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnUpgrade"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/btn_next" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/txt_reconnect_camera"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#F7B52C" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#F7B52C" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnReconnect"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_settings"
+                        android:text="@string/connstus_connected" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_silver_light_corner"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/tips_remove_camera"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#F7B52C" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#F7B52C" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnRemove"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_settings"
+                        android:text="@string/txt_remove" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/background_silver_light"
+        android:gravity="center_vertical" >
+        
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_settings"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_settings"
+            android:text="@string/ok" />
+        
+    </LinearLayout>
+
+</LinearLayout>

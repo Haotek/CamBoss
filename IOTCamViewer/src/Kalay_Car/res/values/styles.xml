@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- LIST --> 
+	
+	<style name="UITableView">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>	
+	</style>
+	
+	<style name="list_container">
+		<item name="android:background">@drawable/background_view_rounded_container</item>
+	</style>
+
+	<style name="list_item_top">
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:paddingTop">1dip</item>
+		<item name="android:paddingBottom">1dip</item>
+		<item name="android:paddingLeft">1dip</item>
+    	<item name="android:paddingRight">1dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/background_view_rounded_top</item>
+	</style>
+
+	<style name="list_item_middle">
+		<item name="android:clickable">true</item>
+		<item name="android:paddingTop">1dip</item>
+		<item name="android:paddingBottom">1dip</item>
+		<item name="android:paddingLeft">1dip</item>
+    	<item name="android:paddingRight">1dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/background_view_rounded_middle</item>
+	</style>
+
+	<style name="list_item_bottom">
+		<item name="android:clickable">true</item>
+		<item name="android:paddingTop">1dip</item>
+		<item name="android:paddingBottom">1dip</item>
+		<item name="android:paddingLeft">1dip</item>
+    	<item name="android:paddingRight">1dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/background_view_rounded_bottom</item>
+	</style>
+	
+	<style name="list_item_single">
+		<item name="android:clickable">true</item>
+		<item name="android:paddingTop">2dip</item>
+		<item name="android:paddingBottom">2dip</item>
+		<item name="android:paddingLeft">2dip</item>
+    	<item name="android:paddingRight">2dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/background_view_rounded_single</item>
+	</style>	
+	
+	<style name="list_item_chevron">
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">1.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>	
+	
+	
+	<!-- TEXT -->
+	<style name="content_page_large_text">
+		<item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+	
+	<style name="content_page_small_text">
+		<item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_selector</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="content_page_large_count_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff8295bf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    
+    <style name="setting_dailog_animstyle">
+        <item name="android:windowEnterAnimation">@anim/settingswindow_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/settingswindow_out_anim</item>
+    </style>
+
+</resources>

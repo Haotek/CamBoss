@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/status_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#000000" >
+
+	<ImageView
+	   android:id="@+id/icon_status"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:layout_alignParentLeft="true"
+	   android:layout_alignParentRight="false"
+	   android:layout_centerHorizontal="false"
+	   android:layout_alignParentTop="true"
+	   android:layout_marginLeft="2dp"
+	   android:layout_marginTop="2dp"
+	   android:background="@drawable/ic_name_gr"/>
+
+	<!--
+	<Button
+	    android:id="@+id/Settingbutton"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerInParent="false"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/btn_morefunction_switch"
+	    android:visibility="gone" />   -->
+
+	<TextView
+	    android:id="@+id/txt_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:text="TextView"
+	    android:textSize="@dimen/status_bar"
+	    android:textColor="#FFFFFF" />
+
+	<TextView
+	    android:id="@+id/txt_unline"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="5dp"
+	    android:textSize="@dimen/status_bar"
+	    android:textColor="#000000"
+	    android:visibility="gone" />
+
+</RelativeLayout>

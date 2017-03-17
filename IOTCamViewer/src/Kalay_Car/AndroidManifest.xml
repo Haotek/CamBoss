@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.tutk.Kalay.Novatek.permission.C2D_MESSAGE" />
+    <application
+        android:name="com.baidu.push.MyFrontiaApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.MultiViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            tools:replace="android:theme"
+            android:name="com.tutk.P2PCam264.PlaybackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <receiver
+            android:name="general.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.tutk.Kalay.Novatek" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="addition.TUTK.AddDeviceTipsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.RemoteFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.CloudRecordingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+        <activity
+            android:name="com.tutk.P2PCam264.DELUX.ViewRemotePhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock" />
+    </application>
+
+</manifest>

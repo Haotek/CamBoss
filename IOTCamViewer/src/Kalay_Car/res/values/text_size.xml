@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_bar"> 10sp</dimen >
+    <dimen name="main_tab"> 17sp</dimen >
+</resources>

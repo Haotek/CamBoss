@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="event_type">
+	    <item>全部</item>
+		<item>移动侦测</item>
+	</string-array>
+</resources>

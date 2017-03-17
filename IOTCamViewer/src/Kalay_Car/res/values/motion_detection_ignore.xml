@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="motion_detection_ignore">
+		<item>Low</item>
+		<item>Medium</item>
+		<item>High</item>
+		<item>Max</item>
+	</string-array>
+</resources>

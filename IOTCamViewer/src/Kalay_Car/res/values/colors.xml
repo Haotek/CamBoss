@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_color">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="seltecap_white">#33FFFFFF</color>
+    <color name="bgclr_bar">#00A99D</color>
+    <color name="bgclor_bottom">#17a196</color>
+    <color name="clr_splt">#8a8a8a</color>
+    <color name="bgclr_devlvitem_pressed">#E6E6E6</color>
+    <color name="bgclr_devlvitem_imgempty">#AFAFAF</color>
+    <color name="bgclr_dialog">#EFEFF4</color>
+    <color name="clr_dialog_caption">#000000</color>
+    <color name="clr_title">#1F1F1F</color>
+    <color name="clr_dlgbutton2_clicked">#8CC63F</color>
+    <color name="transparent_white">#00FFFFFF</color>
+    <color name="txtclr_gray">#6F6F6F</color>
+    <color name="app_color_bg">#ff3598b7</color>
+    <color name="app_title_text_color">#ff036eb8</color>
+    
+    <color name="ch_choose_item_normal_txtclr">#6F6F6F</color>
+    <color name="ch_choose_item_normal_bgclr">#FFFFFF</color>
+    <color name="ch_choose_item_invalid_txtclr">#404040</color>
+    <color name="ch_choose_item_invalid_bgclr">#727272</color>
+    
+    
+    <!-- LIST BORDER COLOR -->
+	<color name="rounded_container_border">#FFFFFFFF</color>
+
+	<!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+	<color name="base_start_color_default">#FF53a7c2</color>
+    <color name="base_end_color_default">#FF53a7c2</color>
+    	
+	<!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+	<color name="base_start_color_pressed">#ff036eb8</color>
+    <color name="base_end_color_pressed">#ff036eb8</color>
+    
+    <!-- ITEM TEXT COLORS - STATES - PRESSED AND DEFAULT -->
+    <color name="text_color_default">#ffffff</color>
+    <color name="text_color_pressed">#ffffff</color>
+    
+     <drawable name="black">#000000</drawable>
+    <drawable name="blue">#0081FF</drawable>
+  	<drawable name="white">#FFFFFF</drawable>
+  	
+  	<!-- QR code scanner -->
+  	<color name="viewfinder_mask">#60000000</color>
+  	<color name="result_view">#b0000000</color>
+  	<color name="viewfinder_frame">#ff000000</color>
+  	<color name="viewfinder_laser">#ffff0000</color>
+  	<color name="possible_result_points">#c0ffff00</color> 
+  	
+  	<color name="item_black">#4B4743</color>
+  	<color name="line_black">#B3B3B3</color>
+  	<color name="line">#F29600</color>
+  	<color name="item_light">#FFE22C</color>
+  	<color name="item_white">#fffefdfc</color>
+  	<color name="real_white">#FFFFFF</color>
+  	<color name="video_bg">#ff4b4743</color>
+  	<color name="panel">#F7B52C</color>
+  	<color name="bg_gray">#878787</color>
+  	<color name="txt_gray">#C8C8C8</color>
+  	<color name="settings_gray">#dbdbdb</color>
+  	<color name="mask_black">#99000000</color>
+
+    <color name="bubble_blue">#0081dc</color>
+    <color name="bubble_black">#595757</color>
+    <color name="bubble_click">#80595757</color>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical|center"
+    android:orientation="horizontal" >
+    
+    
+        <HorizontalScrollView
+        	android:id="@+id/ScrollView_toolbar"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:overScrollMode="never"
+       		android:gravity="center_vertical"
+        	android:scrollbarAlwaysDrawVerticalTrack="true"
+        	android:scrollbars="none" >
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical"
+		    android:orientation="horizontal" >
+
+    		<ImageButton
+    		    android:id="@+id/button_speaker"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_gravity="center_vertical|center"
+    		    android:layout_marginLeft="20.0dp"
+    		    android:background="@drawable/btn_speaker_off_switch"
+    		    android:text="" />
+
+    		<ImageButton
+        		android:id="@+id/button_recording"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_recording_switch_start"
+        		android:text="" />
+    		
+    		<ImageButton
+        		android:id="@+id/button_snapshot"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_snapshot_switch"
+        		android:text="" />
+    
+
+    
+    		<ImageButton
+        		android:id="@+id/button_mirror"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_mirror_ud_switch"
+        		android:text="" />
+    
+    
+   		 	<ImageButton
+        		android:id="@+id/button_mirror_rl"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_mirror_rl_switch"
+        		android:text="" />
+    
+   		 	<ImageButton
+   		 	    android:id="@+id/button_SET"
+   		 	    android:layout_width="wrap_content"
+   		 	    android:layout_height="wrap_content"
+   		 	    android:layout_marginLeft="14.0dp"
+   		 	    android:background="@drawable/btn_ceo_set_switch"
+   		 	    android:text=""
+   		 	    android:visibility="gone" />
+   		 	
+    		<ImageButton
+        		android:id="@+id/button_QVGA"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_qvga_switch"
+        		android:text="" />
+    
+    		<ImageButton
+        		android:id="@+id/button_EMODE"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_emode_switch"
+        		android:text="" />
+    		
+    		<ImageButton
+        		android:id="@+id/button_preset"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_preset" />
+    		
+    		<ImageButton
+        		android:id="@+id/button_cruise"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_pan_tilt" />
+    		
+    		<ImageButton
+        		android:id="@+id/button_brightness"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_brightness" />
+    		
+    		<ImageButton
+        		android:id="@+id/button_contrast"
+        		android:layout_marginLeft="14.0dp"
+        		android:layout_marginRight="20.0dp"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/btn_contrast" />
+    	</LinearLayout>
+    	</HorizontalScrollView>
+    
+
+</LinearLayout>

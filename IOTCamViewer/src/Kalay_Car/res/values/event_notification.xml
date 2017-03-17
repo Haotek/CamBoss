@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="event_notification">
+	    <item>Silent</item>
+		<item>Tones only</item>
+		<item>Vibrate only</item>
+		<item>Ringtone and Vibrate</item>
+	</string-array>
+</resources>

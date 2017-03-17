@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="environment_mode">
+	    <item>Indoor(50hz)</item>
+	    <item>Indoor(60hz)</item>
+		<item>Outdoor</item>
+		<item>Night</item>
+	</string-array>
+</resources>

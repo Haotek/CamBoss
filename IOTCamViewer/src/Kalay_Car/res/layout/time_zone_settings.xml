@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ListView
+        android:id="@+id/lvTimeZone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_silver_light_corner"
+        android:divider="#C8C9CA"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@drawable/list_item_click" />
+
+</LinearLayout>
